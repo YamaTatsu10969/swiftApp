@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,141 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Amazon_co_jp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPJ-Tv-Vn6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="48"/>
+                                <color key="backgroundColor" red="0.30588235289999999" green="0.3921568627" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem title="Item" image="hamburger_menu_white" id="YEm-BS-zsH"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YPh-I2-LIW"/>
+                                    <barButtonItem title="Item" image="amazon.co.jp" id="U7C-Tz-fUd"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ep1-Bm-cZD"/>
+                                    <barButtonItem title="Item" image="bell_white" id="Ii0-Tw-1NZ"/>
+                                    <barButtonItem title="Item" image="shopping_cart_white" id="Y0I-50-T4V"/>
+                                </items>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="0.30588235289999999" green="0.3921568627" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <searchBar contentMode="redraw" placeholder="なにをお探しですか？" translatesAutoresizingMaskIntoConstraints="NO" id="Mg2-m5-HCy">
+                                <rect key="frame" x="0.0" y="68" width="375" height="56"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="0.30588235289999999" green="0.3921568627" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8J-Fl-i6N">
+                                <rect key="frame" x="0.0" y="124" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" image="map_marker_white" id="rfY-qj-CZv"/>
+                                    <barButtonItem title="ローソン不動前 141-0031" id="dbx-8e-LA0"/>
+                                </items>
+                                <color key="barTintColor" red="0.47058823529999999" green="0.54901960780000003" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYA-Sf-zNW">
+                                <rect key="frame" x="0.0" y="168" width="375" height="988"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJM-MP-HNE" userLabel="FormView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content01" translatesAutoresizingMaskIntoConstraints="NO" id="Peu-wh-VPy">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="295"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content02" translatesAutoresizingMaskIntoConstraints="NO" id="ePO-zE-CmB">
+                                                <rect key="frame" x="0.0" y="305" width="375" height="110"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content03" translatesAutoresizingMaskIntoConstraints="NO" id="NPb-Lc-YMF">
+                                                <rect key="frame" x="0.0" y="423" width="375" height="194"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content04" translatesAutoresizingMaskIntoConstraints="NO" id="DTg-gO-17c">
+                                                <rect key="frame" x="0.0" y="627" width="375" height="198.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="DTg-gO-17c" secondAttribute="height" multiplier="240:127" id="JLh-NP-Sf2"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content05" translatesAutoresizingMaskIntoConstraints="NO" id="wmi-7q-tmg">
+                                                <rect key="frame" x="0.0" y="835.5" width="375" height="170"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="DTg-gO-17c" secondAttribute="trailing" id="0tC-in-oAn"/>
+                                            <constraint firstItem="wmi-7q-tmg" firstAttribute="top" secondItem="DTg-gO-17c" secondAttribute="bottom" constant="10" id="3bK-Y6-eHz"/>
+                                            <constraint firstAttribute="trailing" secondItem="Peu-wh-VPy" secondAttribute="trailing" id="4H0-zq-oZs"/>
+                                            <constraint firstAttribute="height" constant="1000" id="8Sf-xP-QL6"/>
+                                            <constraint firstAttribute="trailing" secondItem="ePO-zE-CmB" secondAttribute="trailing" id="AT4-Gn-7Y3"/>
+                                            <constraint firstItem="NPb-Lc-YMF" firstAttribute="leading" secondItem="QJM-MP-HNE" secondAttribute="leading" id="If7-EQ-ZF1"/>
+                                            <constraint firstItem="Peu-wh-VPy" firstAttribute="leading" secondItem="QJM-MP-HNE" secondAttribute="leading" id="J3X-hb-G0J"/>
+                                            <constraint firstItem="DTg-gO-17c" firstAttribute="top" secondItem="NPb-Lc-YMF" secondAttribute="bottom" constant="10" id="LLY-pL-ma6"/>
+                                            <constraint firstItem="ePO-zE-CmB" firstAttribute="leading" secondItem="QJM-MP-HNE" secondAttribute="leading" id="MjI-YC-mEf"/>
+                                            <constraint firstItem="ePO-zE-CmB" firstAttribute="top" secondItem="Peu-wh-VPy" secondAttribute="bottom" constant="10" id="PGQ-ZV-zcK"/>
+                                            <constraint firstItem="NPb-Lc-YMF" firstAttribute="top" secondItem="ePO-zE-CmB" secondAttribute="bottom" constant="8" id="UcS-eI-HeI"/>
+                                            <constraint firstItem="DTg-gO-17c" firstAttribute="leading" secondItem="QJM-MP-HNE" secondAttribute="leading" id="prc-fY-hyv"/>
+                                            <constraint firstItem="wmi-7q-tmg" firstAttribute="leading" secondItem="QJM-MP-HNE" secondAttribute="leading" id="t3U-7O-yd7"/>
+                                            <constraint firstItem="Peu-wh-VPy" firstAttribute="top" secondItem="QJM-MP-HNE" secondAttribute="top" id="tiR-a7-f2A"/>
+                                            <constraint firstAttribute="trailing" secondItem="wmi-7q-tmg" secondAttribute="trailing" id="waQ-UA-hlZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="NPb-Lc-YMF" secondAttribute="trailing" id="yKj-YQ-0HC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="QJM-MP-HNE" secondAttribute="bottom" id="FMC-ys-tSh"/>
+                                    <constraint firstItem="QJM-MP-HNE" firstAttribute="leading" secondItem="hYA-Sf-zNW" secondAttribute="leading" id="PML-MO-Y5D"/>
+                                    <constraint firstItem="QJM-MP-HNE" firstAttribute="top" secondItem="hYA-Sf-zNW" secondAttribute="top" id="Qtr-X4-5uL"/>
+                                    <constraint firstAttribute="trailing" secondItem="QJM-MP-HNE" secondAttribute="trailing" id="cBN-gE-Xb5"/>
+                                    <constraint firstItem="QJM-MP-HNE" firstAttribute="leading" secondItem="hYA-Sf-zNW" secondAttribute="leading" id="r7b-Or-ZCr"/>
+                                    <constraint firstAttribute="trailing" secondItem="QJM-MP-HNE" secondAttribute="trailing" id="sxX-Rn-R71"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FPJ-Tv-Vn6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1mb-pT-y15"/>
+                            <constraint firstItem="l8J-Fl-i6N" firstAttribute="leading" secondItem="Mg2-m5-HCy" secondAttribute="leading" id="DPl-SC-777"/>
+                            <constraint firstItem="Mg2-m5-HCy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GJn-Hc-k1j"/>
+                            <constraint firstItem="hYA-Sf-zNW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Iig-z4-9hy"/>
+                            <constraint firstItem="l8J-Fl-i6N" firstAttribute="trailing" secondItem="Mg2-m5-HCy" secondAttribute="trailing" id="Zjh-cF-uZF"/>
+                            <constraint firstItem="FPJ-Tv-Vn6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jIY-YU-AQz"/>
+                            <constraint firstItem="l8J-Fl-i6N" firstAttribute="top" secondItem="Mg2-m5-HCy" secondAttribute="bottom" id="jjE-L1-TwC"/>
+                            <constraint firstItem="Mg2-m5-HCy" firstAttribute="top" secondItem="FPJ-Tv-Vn6" secondAttribute="bottom" id="nAG-84-rqx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hYA-Sf-zNW" secondAttribute="trailing" id="oRQ-Vd-7J3"/>
+                            <constraint firstItem="Mg2-m5-HCy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ouq-jy-3kJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hYA-Sf-zNW" secondAttribute="bottom" id="suK-yD-T0G"/>
+                            <constraint firstItem="hYA-Sf-zNW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xg7-gp-5p7"/>
+                            <constraint firstItem="QJM-MP-HNE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="xqd-9a-SpF"/>
+                            <constraint firstItem="FPJ-Tv-Vn6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ycf-pC-dos"/>
+                            <constraint firstItem="hYA-Sf-zNW" firstAttribute="top" secondItem="l8J-Fl-i6N" secondAttribute="bottom" id="yrg-PR-C8S"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="1200"/>
+                    <connections>
+                        <outlet property="myToolBar" destination="FPJ-Tv-Vn6" id="Qmy-h2-7VX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="14.842578710644679"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="amazon.co.jp" width="161" height="32"/>
+        <image name="bell_white" width="32" height="32"/>
+        <image name="content01" width="747" height="295"/>
+        <image name="content02" width="747" height="110"/>
+        <image name="content03" width="743" height="194"/>
+        <image name="content04" width="742" height="195"/>
+        <image name="content05" width="742" height="170"/>
+        <image name="hamburger_menu_white" width="32" height="32"/>
+        <image name="map_marker_white" width="32" height="32"/>
+        <image name="shopping_cart_white" width="48" height="48"/>
+    </resources>
 </document>
